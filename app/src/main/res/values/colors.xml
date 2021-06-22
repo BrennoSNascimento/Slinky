@@ -10,4 +10,7 @@
     <color name="blue_text">#29ABE2</color>
     <color name="gray_text">#212121</color>
     <color name="gray_view">#EFEFEF</color>
+    <color name="gray_edit_text">#F4F4F4</color>
+    <color name="search_edit_text">#AEAEAE</color>
+
 </resources>

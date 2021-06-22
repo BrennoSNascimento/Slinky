@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/backArrowImageView"
+        android:layout_width="15dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="35dp"
+        android:src="@drawable/back_arrow_img"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@color/black" />
+
+    <TextView
+        android:id="@+id/myCardTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:text="Meus cartões"
+        android:textColor="@color/blue_text"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toBottomOf="@id/backArrowImageView"
+        app:layout_constraintStart_toEndOf="@id/backArrowImageView" />
+
+    <TextView
+        android:id="@+id/cardNumberTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="32dp"
+        android:text="Número do cartão"
+        android:textColor="@color/blue_text"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/backArrowImageView" />
+
+    <EditText
+        android:id="@+id/cardNumberEditText"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginRight="18dp"
+        android:background="@drawable/background_edittext_rounded"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/cardNumberTextView"
+        app:layout_constraintTop_toBottomOf="@id/cardNumberTextView"
+        android:paddingLeft="19dp"
+        android:text="0000 0000 0000 0000"/>
+
+    <TextView
+        android:id="@+id/validateTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="20dp"
+        android:text="Validade"
+        android:textColor="@color/blue_text"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cardNumberEditText" />
+
+    <EditText
+        android:id="@+id/validateEditText"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginRight="18dp"
+        android:background="@drawable/background_edittext_rounded"
+        app:layout_constraintStart_toStartOf="@id/validateTextView"
+        app:layout_constraintEnd_toStartOf="@id/cvvEditText"
+        app:layout_constraintTop_toBottomOf="@id/validateTextView"
+        android:paddingLeft="19dp"
+        android:text="00/00"/>
+    <TextView
+        android:id="@+id/cvvTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="20dp"
+        android:text="CVV"
+        android:textColor="@color/blue_text"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@id/cvvEditText"
+        app:layout_constraintStart_toEndOf="@id/validateTextView"
+        app:layout_constraintTop_toBottomOf="@id/cardNumberEditText"
+        />
+
+    <EditText
+        android:id="@+id/cvvEditText"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginRight="18dp"
+        android:background="@drawable/background_edittext_rounded"
+        app:layout_constraintStart_toEndOf="@id/validateEditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/validateTextView"
+        android:paddingLeft="19dp"
+        android:text="123"/>
+
+    <TextView
+        android:id="@+id/cardholderTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="20dp"
+        android:text="Nome do titular"
+        android:textColor="@color/blue_text"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/validateEditText" />
+
+    <EditText
+        android:id="@+id/cardholderEditText"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginRight="18dp"
+        android:background="@drawable/background_edittext_rounded"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/cardholderTextView"
+        app:layout_constraintTop_toBottomOf="@id/cardholderTextView"
+        android:paddingLeft="19dp"
+        android:text="Lorem Ipsum"/>
+
+    <TextView
+        android:id="@+id/cpfTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="20dp"
+        android:text="CPF"
+        android:textColor="@color/blue_text"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cardholderEditText" />
+
+    <EditText
+        android:id="@+id/cpfEditText"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginRight="18dp"
+        android:background="@drawable/background_edittext_rounded"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/cpfTextView"
+        app:layout_constraintTop_toBottomOf="@id/cpfTextView"
+        android:paddingLeft="19dp"
+        android:text="123 456 789 00"/>
+
+    <TextView
+        android:id="@+id/birthdateTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="20dp"
+        android:text="Data de nascimento"
+        android:textColor="@color/blue_text"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cpfEditText" />
+
+    <EditText
+        android:id="@+id/birthdateEditText"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginRight="18dp"
+        android:background="@drawable/background_edittext_rounded"
+        app:layout_constraintStart_toStartOf="@id/birthdateTextView"
+        app:layout_constraintEnd_toStartOf="@id/celEditText"
+        app:layout_constraintTop_toBottomOf="@id/birthdateTextView"
+        android:paddingLeft="19dp"
+        android:text="01/01/2000"/>
+
+    <TextView
+        android:id="@+id/celTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="20dp"
+        android:text="Celular"
+        android:textColor="@color/blue_text"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@id/celEditText"
+        app:layout_constraintStart_toEndOf="@id/birthdateTextView"
+        app:layout_constraintTop_toBottomOf="@id/cpfEditText" />
+
+    <EditText
+        android:id="@+id/celEditText"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginRight="18dp"
+        android:background="@drawable/background_edittext_rounded"
+        app:layout_constraintStart_toEndOf="@id/birthdateEditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/celTextView"
+        android:paddingLeft="19dp"
+        android:text="21 98765 4321"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/proxButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Próximo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginHorizontal="40dp"
+        android:background="@drawable/background_btn_rounded"
+        android:layout_marginBottom="20dp"
+        android:textAllCaps="false"
+        android:textColor="@color/white"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

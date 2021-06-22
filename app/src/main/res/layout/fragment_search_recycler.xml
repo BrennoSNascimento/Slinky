@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ImageView
+        android:id="@+id/backArrowImageView"
+        android:layout_width="15dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="35dp"
+        android:src="@drawable/back_arrow_img"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@color/black" />
+
+    <EditText
+        android:id="@+id/myDataTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:text="digite aqui..."
+        android:textSize="22sp"
+        android:textColor="@color/search_edit_text"
+        android:background="@drawable/background_edittext_search"
+        app:layout_constraintBottom_toBottomOf="@id/backArrowImageView"
+        app:layout_constraintStart_toEndOf="@id/backArrowImageView" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/myDataTextView"
+        android:src="@drawable/search_img"
+        android:layout_marginEnd="22dp"
+        app:tint="@color/black"
+        android:layout_marginRight="22dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/searchRecyclerView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/backArrowImageView"
+        app:layout_constraintStart_toStartOf="@id/backArrowImageView"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:orientation="vertical"
+        tools:listitem="@layout/item_recycler_search"
+        android:layout_marginTop="30dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

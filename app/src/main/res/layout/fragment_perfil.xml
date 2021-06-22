@@ -87,6 +87,160 @@
         android:layout_marginStart="14dp"
         android:textColor="@color/gray_text"/>
 
+    <ImageView
+        android:id="@+id/cardIcon"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        app:layout_constraintStart_toStartOf="@id/perfilIcon"
+        app:layout_constraintTop_toBottomOf="@id/perfilIcon"
+        android:layout_marginTop="34dp"
+        android:src="@drawable/card_img"
+        app:tint="@color/blue_text" />
+
+    <TextView
+        android:id="@+id/myCardTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Meus cartões"
+        app:layout_constraintStart_toEndOf="@id/cardIcon"
+        app:layout_constraintTop_toTopOf="@id/cardIcon"
+        app:layout_constraintBottom_toBottomOf="@id/cardIcon"
+        android:layout_marginLeft="14dp"
+        android:layout_marginStart="14dp"
+        android:textColor="@color/gray_text"/>
+
+    <ImageView
+        android:id="@+id/servicesIcon"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        app:layout_constraintStart_toStartOf="@id/cardIcon"
+        app:layout_constraintTop_toBottomOf="@id/cardIcon"
+        android:layout_marginTop="34dp"
+        android:src="@drawable/event_img"
+        app:tint="@color/blue_text" />
+
+    <TextView
+        android:id="@+id/servicesTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Serviços agendados"
+        app:layout_constraintStart_toEndOf="@id/servicesIcon"
+        app:layout_constraintTop_toTopOf="@id/servicesIcon"
+        app:layout_constraintBottom_toBottomOf="@id/servicesIcon"
+        android:layout_marginLeft="14dp"
+        android:layout_marginStart="14dp"
+        android:textColor="@color/gray_text"/>
+
+    <ImageView
+        android:id="@+id/aboutUsIcon"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        app:layout_constraintStart_toStartOf="@id/servicesIcon"
+        app:layout_constraintTop_toBottomOf="@id/servicesIcon"
+        android:layout_marginTop="34dp"
+        android:src="@drawable/perfil_img"
+        app:tint="@color/blue_text" />
+
+    <TextView
+        android:id="@+id/aboutUsTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Sobre nós"
+        app:layout_constraintStart_toEndOf="@id/aboutUsIcon"
+        app:layout_constraintTop_toTopOf="@id/aboutUsIcon"
+        app:layout_constraintBottom_toBottomOf="@id/aboutUsIcon"
+        android:layout_marginLeft="14dp"
+        android:layout_marginStart="14dp"
+        android:textColor="@color/gray_text"/>
+
+    <ImageView
+        android:id="@+id/associationIcon"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        app:layout_constraintStart_toStartOf="@id/aboutUsIcon"
+        app:layout_constraintTop_toBottomOf="@id/aboutUsIcon"
+        android:layout_marginTop="34dp"
+        android:src="@drawable/home_img"
+        app:tint="@color/blue_text" />
+
+    <TextView
+        android:id="@+id/associationTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Quero me associar"
+        app:layout_constraintStart_toEndOf="@id/associationIcon"
+        app:layout_constraintTop_toTopOf="@id/associationIcon"
+        app:layout_constraintBottom_toBottomOf="@id/associationIcon"
+        android:layout_marginLeft="14dp"
+        android:layout_marginStart="14dp"
+        android:textColor="@color/gray_text"/>
+
+    <ImageView
+        android:id="@+id/contactUsIcon"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        app:layout_constraintStart_toStartOf="@id/associationIcon"
+        app:layout_constraintTop_toBottomOf="@id/associationIcon"
+        android:layout_marginTop="34dp"
+        android:src="@drawable/perfil_img"
+        app:tint="@color/blue_text" />
+
+    <TextView
+        android:id="@+id/contactUsTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Fale conosco"
+        app:layout_constraintStart_toEndOf="@id/contactUsIcon"
+        app:layout_constraintTop_toTopOf="@id/contactUsIcon"
+        app:layout_constraintBottom_toBottomOf="@id/contactUsIcon"
+        android:layout_marginLeft="14dp"
+        android:layout_marginStart="14dp"
+        android:textColor="@color/gray_text"/>
+
+    <ImageView
+        android:id="@+id/termsIcon"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        app:layout_constraintStart_toStartOf="@id/contactUsIcon"
+        app:layout_constraintTop_toBottomOf="@id/contactUsIcon"
+        android:layout_marginTop="34dp"
+        android:src="@drawable/perfil_img"
+        app:tint="@color/blue_text" />
+
+    <TextView
+        android:id="@+id/termsTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Termos e condições de uso"
+        app:layout_constraintStart_toEndOf="@id/termsIcon"
+        app:layout_constraintTop_toTopOf="@id/termsIcon"
+        app:layout_constraintBottom_toBottomOf="@id/termsIcon"
+        android:layout_marginLeft="14dp"
+        android:layout_marginStart="14dp"
+        android:textColor="@color/gray_text"/>
+
+    <ImageView
+        android:id="@+id/logoutIcon"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        app:layout_constraintStart_toStartOf="@id/termsIcon"
+        app:layout_constraintTop_toBottomOf="@id/termsIcon"
+        android:layout_marginTop="34dp"
+        android:src="@drawable/perfil_img"
+        app:tint="@color/blue_text" />
+
+    <TextView
+        android:id="@+id/logoutTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        app:layout_constraintStart_toEndOf="@id/logoutIcon"
+        app:layout_constraintTop_toTopOf="@id/logoutIcon"
+        app:layout_constraintBottom_toBottomOf="@id/logoutIcon"
+        android:layout_marginLeft="14dp"
+        android:layout_marginStart="14dp"
+        android:textColor="@color/gray_text"/>
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
